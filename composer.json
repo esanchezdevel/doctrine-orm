@@ -1,5 +1,5 @@
 {
-  "name": "esanchez-dev/doctrine-orm",
+  "name": "esanchez-devel/doctrine-orm",
   "description": "project example of how to use doctrine as ORM (Object Relational Mapping) with databases",
   "require": {
     "doctrine/orm": "^2.8.2",
