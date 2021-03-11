@@ -13,13 +13,16 @@ $proxyDir = null;
 $cache = null;
 $useSimpleAnnotationReader = false;
 
-$config = Setup::createAnnotationMetadataConfiguration(array(__DIR__ . '/src'), $isDevMode, $proxyDir, $cache, $useSimpleAnnotationReader);
+$config = Setup::createAnnotationMetadataConfiguration([__DIR__ . '/src'], $isDevMode, $proxyDir, $cache, $useSimpleAnnotationReader);
 
 //database configuration parameters
-$conn = array(
-    'driver' => 'pdo_sqlite',
-    'path' => __DIR__ . '/db.sqlite',
-);
+$conn = [
+    'driver' => 'pdo_mysql',
+    'dbname' => 'doctrine_orm',
+    'user' => 'root',
+    'password' => 'qwertyui',
+    'host' => '127.0.0.1:3307'
+];
 
 //obtaining the entity manager
 $entityManager = EntityManager::create($conn, $config);
