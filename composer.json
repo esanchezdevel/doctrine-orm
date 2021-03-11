@@ -1,0 +1,14 @@
+{
+  "name": "esanchez-dev/doctrine-orm",
+  "description": "project example of how to use doctrine as ORM (Object Relational Mapping) with databases",
+  "require": {
+    "doctrine/orm": "^2.8.2",
+    "symfony/yaml": "^5.2.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src"
+    }
+  }
+}
+
