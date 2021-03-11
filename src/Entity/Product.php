@@ -7,7 +7,6 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Class Product
  * @package App\Entity
  * @ORM\Entity
  * @ORM\Table(name="products")
