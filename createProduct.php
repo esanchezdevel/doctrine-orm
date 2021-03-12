@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use App\Entity\Product;
 
-require_once 'bootstrap.php';
+require_once __DIR__ . '/bootstrap.php';
 
 //get product name from argument passed by console
 $newProductName = $argv[1];

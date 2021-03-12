@@ -5,7 +5,7 @@ declare(strict_types=1);
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Tools\Setup;
 
-require 'vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 //crete simple "default" Doctrine ORM configuration for Annotations
 $isDevMode = true;
