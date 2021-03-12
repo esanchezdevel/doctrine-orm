@@ -25,6 +25,11 @@ class Product
      */
     protected $name;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="User", inversedBy="products", cascade={"persist"})
+     */
+    protected User $user;
+
     public function getId(): int
     {
         return $this->id;
@@ -38,5 +43,15 @@ class Product
     public function setName(string $name): void
     {
         $this->name = $name;
+    }
+
+    public function getUser(): User
+    {
+        return $this->user;
+    }
+
+    public function setUser(User $user): void
+    {
+        $this->user = $user;
     }
 }
