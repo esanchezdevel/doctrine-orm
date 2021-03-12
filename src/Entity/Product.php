@@ -18,12 +18,12 @@ class Product
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue
      */
-    protected $id;
+    protected int $id;
 
     /**
      * @ORM\Column(type="string")
      */
-    protected $name;
+    protected string $name;
 
     /**
      * @ORM\ManyToOne(targetEntity="User", inversedBy="products", cascade={"persist"})
